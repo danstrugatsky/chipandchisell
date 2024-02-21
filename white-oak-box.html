@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chip&Chisel</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="sidebar1">
+            <ul class="sidebar">
+                <li class="close-button" onclick=hideSidebar()><a href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="24"
+                            viewBox="0 -960 960 960" width="24">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li class="sidebar-line"><a href="/materials.html"> МАТЕРИАЛЫ ДЛЯ ТВОРЧЕСТВА</a></li>
+                <li class="sidebar-line"><a href="/white-oak-box.html"> ГОТОВОЕ</a></li>
+                <li class="sidebar-line"><a href="/designes.html"> ФАЙЛЫ ДЛЯ РЕЗКИ</a></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="logo"><a href="/index.html"> Chip&Chisel</a></li>
+                <li class="hideOnmobile"><a href="/materials.html"> МАТЕРИАЛЫ ДЛЯ ТВОРЧЕСТВА</a></li>
+                <li class="hideOnmobile"><a href="/boxes.html"> ГОТОВОЕ</a></li>
+                <li class="hideOnmobile"><a href="/designes.html"> ФАЙЛЫ ДЛЯ РЕЗКИ</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"> <svg xmlns="http://www.w3.org/2000/svg"
+                            height="26" viewBox="0 -960 960 960" width="26">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="single-product">
+            <div class="row">
+                <div class="col-1">
+                    <div class="product-image">
+                        <div class="product-image-main">
+                            <img src="pictures/pencilbox/pencilbox1.jpg" alt="" id="product-main-image">
+                        </div>
+                        <div class="product-image-slider">
+                            <img src="pictures/pencilbox/pencilbox1.jpg" alt="" class="image-list">
+                            <img src="pictures/pencilbox/pencilbox2.jpg" alt="" class="image-list">
+                            <img src="pictures/pencilbox/pencilbox4.jpg" alt="" class="image-list">
+                            <img src="pictures/pencilbox/pencilbox5.jpg" alt="" class="image-list">
+                            <img src="pictures/pencilbox/pencilbox1.jpg" alt="" class="image-list">
+                            <img src="pictures/pencilbox/pencilbox2.jpg" alt="" class="image-list">
+                            <img src="pictures/pencilbox/pencilbox4.jpg" alt="" class="image-list">
+                        </div>
+                    </div>
+                </div>
+               <div class="col-2">
+                   <div class="breadcrumb">
+                        <span><a href="/main-page.html">Главная</a></span>
+                        <span><a href="/materials.html">Изделия из дерева</a></span>
+                        <span><a href="/boards.html">Коробки</a></span>
+                        <span class="active">Шкатулка с дубовой крышкой</span>
+                    </div>
+
+                   <div class="product">
+                        <div class="product-title">
+                            <h2>Шкатулка с дубовой крышкой</h2>
+                        </div>
+
+                        <div class="product-price">
+                            <span class="offer-price">₽99.00</span>
+                            <span class="sale-price">₽129.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+    <script>
+        /* slider photos*/
+        const sliderMainImage = document.getElementById("product-main-image"); 
+        const sliderImageList = document.getElementsByClassName("image-list");
+        console.log(sliderImageList);
+
+        sliderImageList[0].onclick = function(){
+            sliderMainImage.src = sliderImageList[0].src;
+            console.log(sliderMainImage.src);
+        };
+        sliderImageList[1].onclick = function(){
+            sliderMainImage.src = sliderImageList[1].src;
+            console.log(sliderMainImage.src);
+            };
+
+         sliderImageList[2].onclick = function(){
+            sliderMainImage.src = sliderImageList[2].src;
+            console.log(sliderMainImage.src);
+            };
+
+        sliderImageList[3].onclick = function(){
+            sliderMainImage.src = sliderImageList[3].src;
+            console.log(sliderMainImage.src);
+            };    
+
+            
+
+    </script>
+
+
+
+</body>
+
+</html>

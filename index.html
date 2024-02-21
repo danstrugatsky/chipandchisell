@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chip&Chisel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="sidebar1">
+            <ul class="sidebar">
+                <li class="close-button" onclick=hideSidebar()><a href="#"> <svg xmlns="http://www.w3.org/2000/svg"
+                            height="24" viewBox="0 -960 960 960" width="24">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li class="sidebar-line"><a href="/materials.html"> МАТЕРИАЛЫ ДЛЯ ТВОРЧЕСТВА</a></li>
+                <li class="sidebar-line"><a href="/white-oak-box.html"> ГОТОВОЕ</a></li>
+                <li class="sidebar-line"><a href="/files.html"> ФАЙЛЫ ДЛЯ РЕЗКИ</a></li>
+            </ul>
+        </div>
+      
+            <div class="menu">
+                <ul>
+                    <li class="logo"><a href="/main-page.html"> Chip&Chisel</a></li>
+                    <li class="hideOnmobile"><a href="/materials.html"> МАТЕРИАЛЫ ДЛЯ ТВОРЧЕСТВА</a></li>
+                    <li class="hideOnmobile"><a href="/white-oak-box.html"> ГОТОВОЕ</a></li>
+                    <li class="hideOnmobile"><a href="/files.html"> ФАЙЛЫ ДЛЯ РЕЗКИ</a></li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"> <svg xmlns="http://www.w3.org/2000/svg"
+                                height="26" viewBox="0 -960 960 960" width="26">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                            </svg></a></li>
+                </ul>
+            </div>
+            <div class="container-main">
+            <div class="categories">
+
+                <div class="item">
+                    <a href="/white-oak-box.html">
+                        <img data-src="pictures/ready-to-go.jpg" class="three" src="pictures/ready-to-go.jpg">
+                    </a>
+                    <div class="category-name">
+                        <!-- <div> Готовые изделия</div> -->
+                        <div>
+                            <a href="/white-oak-box.html">Изделия из дерева</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <a href="/materials.html">
+                        <img data-src="pictures/boards.jpg" class="three" src="pictures/boards.jpg">
+                    </a>
+                    <div class="category-name">
+                        <!-- <div> Пенал для канцелярки с крышкой</div> -->
+                        <div>
+                            <a href="/materials.html">Материалы</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <a href="/files.html">
+                        <img data-src="pictures/lightburn.jpg" class="three" src="pictures/lightburn.jpg">
+                    </a>
+                    <div class="category-name">
+                        <!-- <div> Пенал для канцелярки с крышкой</div> -->
+                        <div>
+                            <a href="/pencilbox.html">Файлы для лазерной резки</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <section class="text">
+            <h2>About us</h2>
+            <article>
+                <p>"Chip and Chisel место для творчества, материалы, всякое разное. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Voluptatem placeat ad temporibus, labore odit ipsa vero
+                    dignissimos? Molestias mollitia qui quae esse repellat ipsa, adipisci quos, sapiente velit
+                    voluptatum nam!
+                    Quod unde corrupti tempora repellendus, qui quaerat obcaecati at doloremque minima
+                    voluptatum tenetur commodi similique? Corrupti sunt est reiciendis amet impedit eum, cumque
+                    repudiandae fugiat fugit ab, doloremque accusantium id?
+                    Accusantium molestias doloremque, temporibus maxime perspiciatis asperiores officia
+                    exercitationem a distinctio autem labore ullam atque similique ducimus amet quis deserunt
+                    facere placeat alias ratione libero ab non fuga! Assumenda, amet.
+                    At accusamus consectetur accusantium deleniti, voluptatem assumenda. Rerum accusantium
+                    obcaecati dolorum. Perferendis, soluta nisi recusandae, error dolor temporibus enim amet
+                    consectetur quas unde expedita quaerat fuga suscipit magnam assumenda impedit?
+                    Adipisci dolor accusantium doloribus nemo velit quidem officiis consequatur saepe tempore,
+                    eum tempora quibusdam, ex modi, nulla rerum nam soluta a cupiditate fugiat ipsa odit numquam
+                    autem. Nobis, sint fuga."
+                </p>
+            </article>
+        </section>
+    </nav>
+
+
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+
+
+</body>
+
+</html>
